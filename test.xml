@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8">
+
+<collection>
+
+    <Reference name="Searching For Data">
+
+        <SubReference name= "TestfromGit">
+            <Description><![CDATA["Windows for loop to search for a particular string via the command line"]]>
+            </Description>
+            <command><![CDATA["for /R . %i in (*) do echo "%i" >> find.txt & findstr/I <INSERT STRING> "%i" >> find.txt"]]>
+            </command>
+        </SubReference>
+
+
+
+    </Reference>
+
+
+</collection>
+
