@@ -3,11 +3,11 @@
 <collection>
 
 
-<Reference name="Sed">
+  <Reference name="Sed">
 
-<SubReference name= "Sed examples">
-<Description><![CDATA["Sed works by performing any number of user-specified editing operations ("commands") on the input data. Sed is line-based, so the commands are performed on each line in order. And, sed writes its results to standard output (stdout); it doesn't modify any input files.
-
+    <SubReference name= "Sed examples">
+      <Description><![CDATA["Sed works by performing any number of user-specified editing operations ("commands") on the input data. Sed is line-based, so the commands are performed on each line in order. And, sed writes its results to standard output (stdout); it doesn't modify any input files.
+  
 Let's look at some examples. The first several are going to be a bit weird because I'm using them to illustrate how sed works rather than to perform any useful task. However, if you're new to sed, it's very important that you understand them.(Look at first command bellow)
 
 If you type this command, you'll get absolutely no output. Now, what happened? In this example, we called sed with one editing command, d. Sed opened the /etc/services file, read a line into its pattern buffer, performed our editing command ("delete line"), and then printed the pattern buffer (which was empty). It then repeated these steps for each successive line. This produced no output, because the d command zapped every single line in the pattern buffer!
@@ -19,15 +19,15 @@ The third thing to notice is the use of single quotes to surround the d command.
 The second Command bellow shows of how to use sed to remove the first line of the /etc/services file from our output stream.
 
 As you can see, this command is very similar to our first d command, except that it is preceded by a 1. If you guessed that the 1 refers to line number one, you're right. While in our first example, we used d by itself, this time we use the d command preceded by an optional numerical address. By using addresses, you can tell sed to perform edits only on a particular line or lines."]]>
-</Description>
-<command><![CDATA["$ sed -e 'd' /etc/services
+      </Description>
+      <command><![CDATA["$ sed -e 'd' /etc/services
 
 $ sed -e '1d' /etc/services | more"]]>
-</command>
-</SubReference>
+      </command>
+    </SubReference>
 
 
 
-</Reference>
+  </Reference>
 
 </collection>
