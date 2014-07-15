@@ -2,7 +2,7 @@
 
 <collection>
 
-    <Reference name="Searching For Data">
+    <Reference name="Git data">
 
         <SubReference name= "TestfromGit">
             <Description><![CDATA["Windows for loop to search for a particular string via the command line"]]>
