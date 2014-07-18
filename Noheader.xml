@@ -1,6 +1,6 @@
 
 
-<collection>
+<col>
 
 
     <Reference name="NO Header">
@@ -30,5 +30,5 @@ $ sed -e '1d' /etc/services | more"]]>
 
     </Reference>
 
-</collection>
+</col>
 
