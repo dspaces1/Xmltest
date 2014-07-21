@@ -29,7 +29,7 @@ $ sed -e '1d' /etc/services | more"]]>
     
 
 
-    </Reference>
+    </Reference
 
     <Refere name="WrongWithRef">
 
