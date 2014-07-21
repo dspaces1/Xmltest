@@ -29,9 +29,9 @@ $ sed -e '1d' /etc/services | more"]]>
     
 
 
-    </Reference
+    </Reference>
 
-    <Refere name="WrongWithRef">
+    <Refere name="WrongWithRef"
 
         <SubReference name= "TEST">
             <Description><![CDATA["Sed works by performing any number of user-specified editing operations ("commands") on the input data. Sed is line-based, so the commands are performed on each line in order. And, sed writes its results to standard output (stdout); it doesn't modify any input files.
