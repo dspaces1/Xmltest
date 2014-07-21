@@ -55,7 +55,7 @@ $ sed -e '1d' /etc/services | more"]]>
 </SubReference>
 
 <SubReference name= "TEST2">
-            <Description<![CDATA["Sed works by performing any number of user-specified editing operations ("commands") on the input data. Sed is line-based, so the commands are performed on each line in order. And, sed writes its results to standard output (stdout); it doesn't modify any input files.
+            <Description><![CDATA["Sed works by performing any number of user-specified editing operations ("commands") on the input data. Sed is line-based, so the commands are performed on each line in order. And, sed writes its results to standard output (stdout); it doesn't modify any input files.
 
 Let's look at some examples. The first several are going to be a bit weird because I'm using them to illustrate how sed works rather than to perform any useful task. However, if you're new to sed, it's very important that you understand them.(Look at first command bellow)
 
