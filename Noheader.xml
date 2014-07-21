@@ -26,6 +26,35 @@ $ sed -e '1d' /etc/services | more"]]>
             </command>
         </SubReference>
 
+    
+
+
+    </Reference>
+
+    <Referee name="Wrong">
+
+        <SubReference name= "TEST">
+            <Description><![CDATA["Sed works by performing any number of user-specified editing operations ("commands") on the input data. Sed is line-based, so the commands are performed on each line in order. And, sed writes its results to standard output (stdout); it doesn't modify any input files.
+
+Let's look at some examples. The first several are going to be a bit weird because I'm using them to illustrate how sed works rather than to perform any useful task. However, if you're new to sed, it's very important that you understand them.(Look at first command bellow)
+
+If you type this command, you'll get absolutely no output. Now, what happened? In this example, we called sed with one editing command, d. Sed opened the /etc/services file, read a line into its pattern buffer, performed our editing command ("delete line"), and then printed the pattern buffer (which was empty). It then repeated these steps for each successive line. This produced no output, because the d command zapped every single line in the pattern buffer!
+
+There are a couple of things to notice in this example. First, /etc/services was not modified at all. This is because, again, sed only reads from the file you specify on the command line, using it as input -- it doesn't try to modify the file. The second thing to notice is that sed is line-oriented. The d command didn't simply tell sed to delete all incoming data in one fell swoop. Instead, sed read each line of /etc/services one by one into its internal buffer, called the pattern buffer. Once a line was read into the pattern buffer, it performed the d command and printed the contents of the pattern buffer (nothing in this example). Later, I'll show you how to use address ranges to control which lines a command is applied to -- but in the absence of addresses, a command is applied to all lines.
+
+The third thing to notice is the use of single quotes to surround the d command. It's a good idea to get into the habit of using single quotes to surround your sed commands, so that shell expansion is disabled.
+
+The second Command bellow shows of how to use sed to remove the first line of the /etc/services file from our output stream.
+
+As you can see, this command is very similar to our first d command, except that it is preceded by a 1. If you guessed that the 1 refers to line number one, you're right. While in our first example, we used d by itself, this time we use the d command preceded by an optional numerical address. By using addresses, you can tell sed to perform edits only on a particular line or lines."]]>
+            </Description>
+            <command><![CDATA["$ sed -e 'd' /etc/services
+
+$ sed -e '1d' /etc/services | more"]]>
+            </command>
+        </SubReference>
+
+    
 
 
     </Reference>
