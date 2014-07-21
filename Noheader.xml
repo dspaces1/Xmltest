@@ -51,7 +51,7 @@ As you can see, this command is very similar to our first d command, except that
             <command><![CDATA["$ sed -e 'd' /etc/services
 
 $ sed -e '1d' /etc/services | more"]]>
-
+ </command>
         </SubReference>
 
         <SubReference name= "TEST2">
@@ -71,7 +71,7 @@ As you can see, this command is very similar to our first d command, except that
             </Description>
             <command><![CDATA["$ sed -e 'd' /etc/services
 
-$ sed -e '1d' /etc/services | more"]]>
+$ sed -e '1d' /etc/services | more"]]> </command>
         </SubReference>
 
 <SubReference name= "TEST3">
