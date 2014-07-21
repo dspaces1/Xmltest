@@ -52,6 +52,8 @@ As you can see, this command is very similar to our first d command, except that
 
 $ sed -e '1d' /etc/services | more"]]>
 
+</SubReference>
+
 <SubReference name= "TEST2">
             <Description<![CDATA["Sed works by performing any number of user-specified editing operations ("commands") on the input data. Sed is line-based, so the commands are performed on each line in order. And, sed writes its results to standard output (stdout); it doesn't modify any input files.
 
@@ -70,6 +72,7 @@ As you can see, this command is very similar to our first d command, except that
             <command><![CDATA["$ sed -e 'd' /etc/services
 
 $ sed -e '1d' /etc/services | more"]]>
+</SubReference>
 
 <SubReference name= "TEST3">
             <Description><![CDATA["Sed works by performing any number of user-specified editing operations ("commands") on the input data. Sed is line-based, so the commands are performed on each line in order. And, sed writes its results to standard output (stdout); it doesn't modify any input files.
